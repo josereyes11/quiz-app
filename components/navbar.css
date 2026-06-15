@@ -16,6 +16,22 @@
   color: var(--color-text-secondary);
 }
 
+.navbar__link--active {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.navbar__link--active .navbar__icon {
+  filter: invert(1);
+}
+
+.navbar__link--active .navbar__label {
+  color: white;
+}
+
 .navbar__icon {
   width: 24px;
   height: 24px;

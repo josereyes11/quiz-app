@@ -3,10 +3,11 @@
   border-bottom: 1px solid var(--color-border);
   padding: 16px;
   position: sticky;
+  text-align: center;
 }
 
 .header__title {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: var(--color-accent);
   letter-spacing: 0.1rem;
   text-transform: uppercase;
