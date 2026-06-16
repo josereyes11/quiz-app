@@ -1,0 +1,36 @@
+.profile__picture {
+  display: flex;
+  justify-content: center;
+}
+
+.profile__picture img {
+  width: 200px;
+  height: 200px;
+}
+
+.profile__bio {
+  text-align: center;
+  margin-bottom: 16px;
+  padding: 8px;
+}
+
+.profile__aboutme {
+  background-color: var(--color-surface);
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.profile__analytics {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.profile__bento {
+  flex: 1;
+  background-color: var(--color-surface);
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+}

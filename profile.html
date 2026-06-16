@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML & CSS Quizz</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">HTML & CSS QUIZ</h1>
+    </header>
+    <main class="main">
+      <div class="profile__picture">
+        <img src="./assets/profile-picture.png" alt="profile-picture" />
+      </div>
+      <div class="profile__bio">
+        <h2 class="profile__name">Jose Reyes</h2>
+        <p class="profile__location">Designer, Berlin</p>
+      </div>
+      <article class="profile__aboutme">
+        <h2 class="profile__aboutme-title">About me</h2>
+        <p>
+          Product designer with 6+ years in the German startup world, now
+          learning to build the things I used to only design.
+        </p>
+      </article>
+      <section class="profile__analytics">
+        <div class="profile__bento">10 Questions</div>
+        <div class="profile__bento">4 bookmarks</div>
+      </section>
+      <section class="profile__settings">
+        <h2 class="profile__settings-title">Settings</h2>
+        <div class="profile__setting">Darkmode</div>
+        <div class="profile__setting-toggle">icon</div>
+      </section>
+    </main>
+    <nav class="navbar">
+      <a class="navbar__link" href="index.html">
+        <img class="navbar__icon" src="./assets/home.svg" alt="Home" />
+        <span class="navbar__label">Home</span>
+      </a>
+      <a class="navbar__link" href="bookmarks.html">
+        <img class="navbar__icon" src="./assets/bookmark.svg" alt="Bookmarks" />
+        <span class="navbar__label">Bookmarks</span>
+      </a>
+      <a class="navbar__link navbar__link--active" href="profile.html">
+        <img
+          class="navbar__icon"
+          src="./assets/user--avatar.svg"
+          alt="Profile"
+        />
+        <span class="navbar__label">Profile</span>
+      </a>
+    </nav>
+  </body>
+</html>
