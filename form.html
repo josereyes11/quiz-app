@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Quiz</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">HTML & CSS QUIZ</h1>
+    </header>
+    <main class="main">
+      <form class="form">
+        <label class="form__label" for="Question">Your Question</label>
+        <textarea
+          class="form__textarea"
+          id="question"
+          name="question"
+        ></textarea>
+
+        <label class="form__label" for="answer">Your Answer</label>
+        <textarea class="form__textarea" id="answer" name="answer"></textarea>
+
+        <label class="form__label" for="tag">Tag</label>
+        <input class="form__input" type="text" id="tag" name="tag" />
+
+        <button class="form__submit" type="submit">Add question</button>
+      </form>
+    </main>
+    <nav class="navbar">
+      <a class="navbar__link" href="index.html">
+        <img class="navbar__icon" src="./assets/home.svg" alt="Home" />
+        <span class="navbar__label">Home</span>
+      </a>
+      <a class="navbar__link" href="bookmarks.html">
+        <img class="navbar__icon" src="./assets/bookmark.svg" alt="Bookmarks" />
+        <span class="navbar__label">Bookmarks</span>
+      </a>
+      <a class="navbar__link navbar__link--active" href="form.html">
+        <img
+          class="navbar__icon"
+          src="./assets/add.svg"
+          alt="Add a new question"
+        />
+        <span class="navbar__label">Add</span>
+      </a>
+      <a class="navbar__link" href="profile.html">
+        <img
+          class="navbar__icon"
+          src="./assets/user--avatar.svg"
+          alt="Profile"
+        />
+        <span class="navbar__label">Profile</span>
+      </a>
+    </nav>
+    <script src="form.js" defer></script>
+  </body>
+</html>
