@@ -12,7 +12,16 @@ answerButton.addEventListener("click", function () {
 });
 
 const bookmarkIcon = document.querySelector(".card__bookmark");
+const bookmarkImg = bookmarkIcon.querySelector("img");
 
 bookmarkIcon.addEventListener("click", function () {
-  bookmarkIcon.classList.toggle(".card__bookmark--active");
+  bookmarkIcon.classList.toggle("card__bookmark--active");
+
+  if (bookmarkIcon.classList.contains("card__bookmark--active")) {
+    bookmarkImg.src = "./assets/bookmark--filled.svg";
+    bookmarkImg.alt = "Bookmarked";
+  } else {
+    bookmarkImg.src = "./assets/bookmark.svg";
+    bookmarkImg.alt = "Not bookmarked";
+  }
 });
