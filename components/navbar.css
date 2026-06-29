@@ -14,13 +14,14 @@
   gap: 4px;
   text-decoration: none;
   color: var(--color-text-secondary);
+  width: 72px;
+  padding: 4px 12px;
+  border-radius: 8px;
 }
 
 .navbar__link--active {
   background-color: var(--color-accent);
   color: var(--color-bg);
-  padding: 4px 12px;
-  border-radius: 8px;
   font-weight: bold;
 }
 
