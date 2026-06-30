@@ -11,19 +11,19 @@
 
 .form__textarea {
   background-color: var(--color-surface);
-  border-color: 1px solid var(--color-border);
-  border-radius: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
   padding: 12px;
   color: var(--color-text-primary);
   font-family: monospace;
   resize: none;
-  min-height: 80px;
+  min-height: 140px;
 }
 
 .form__input {
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 12px;
   color: var(--color-text-primary);
   font-family: monospace;
@@ -33,10 +33,11 @@
   background-color: var(--color-accent);
   color: var(--color-bg);
   border: none;
-  border-radius: 16px;
-  padding: 24px;
+  border-radius: 8px;
+  padding: 16px;
   font-family: monospace;
   font-weight: bold;
   cursor: pointer;
   margin-top: 8px;
+  margin-bottom: 16px;
 }
