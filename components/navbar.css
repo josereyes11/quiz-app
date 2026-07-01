@@ -43,3 +43,7 @@
   font-size: 0.7rem;
   letter-spacing: 0.05em;
 }
+
+.light-mode .navbar__icon {
+  filter: invert();
+}
