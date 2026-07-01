@@ -45,5 +45,5 @@
 }
 
 .light-mode .navbar__icon {
-  filter: invert();
+  filter: invert(0);
 }
