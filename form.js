@@ -14,37 +14,57 @@ form.addEventListener("submit", function (event) {
   const title = document.createElement("h2");
   title.classList.add("card__title");
   title.textContent = questionValue;
+  card.appendChild(title);
 
   const answer = document.createElement("p");
   answer.classList.add("card__answer", "hidden");
   answer.textContent = answerValue;
+  card.appendChild(answer);
 
   const button = document.createElement("button");
   button.classList.add("card__button");
   button.textContent = "Show answer";
+  card.appendChild(button);
 
-  const bookmark = document.createElement("div");
-  bookmark.classList.add("card__bookmark");
+  const bookmarkIcon = document.createElement("div");
+  bookmarkIcon.classList.add("card__bookmark");
+  card.appendChild(bookmarkIcon);
 
   const bookmarkImg = document.createElement("img");
   bookmarkImg.src = "./assets/bookmark.svg";
   bookmarkImg.alt = "Not bookmarked";
+  bookmarkIcon.appendChild(bookmarkImg);
 
   const tags = document.createElement("div");
   tags.classList.add("card__tags");
+  card.appendChild(tags);
 
   const tag = document.createElement("span");
   tag.classList.add("card__tag");
   tag.textContent = tagValue;
-
-  card.appendChild(title);
-  card.appendChild(answer);
-  card.appendChild(button);
-  card.appendChild(bookmark);
-  card.appendChild(tags);
-
-  bookmark.appendChild(bookmarkImg);
   tags.appendChild(tag);
+
+  button.addEventListener("click", function () {
+    answer.classList.toggle("hidden");
+
+    if (answer.classList.contains("hidden")) {
+      button.textContent = "Show answer";
+    } else {
+      button.textContent = "Hide answer";
+    }
+  });
+
+  bookmarkIcon.addEventListener("click", function () {
+    bookmarkIcon.classList.toggle("card__bookmark--active");
+
+    if (bookmarkIcon.classList.contains("card__bookmark--active")) {
+      bookmarkImg.src = "./assets/bookmark--filled.svg";
+      bookmarkImg.alt = "Bookmarked";
+    } else {
+      bookmarkImg.src = "./assets/bookmark.svg";
+      bookmarkImg.alt = "Not bookmarked";
+    }
+  });
 
   main.appendChild(card);
 
