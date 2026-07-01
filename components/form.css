@@ -41,3 +41,7 @@
   margin-top: 8px;
   margin-bottom: 16px;
 }
+
+.form__counter {
+  text-align: right;
+}

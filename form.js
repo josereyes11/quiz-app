@@ -50,3 +50,22 @@ form.addEventListener("submit", function (event) {
 
   form.reset();
 });
+
+function updateCounter(field, counter) {
+  const remaining = 150 - field.value.length;
+  counter.textContent = remaining + " characters left";
+}
+
+const questionField = document.querySelector("#question");
+const questionCounter = document.querySelector("#question__counter");
+
+questionField.addEventListener("input", function () {
+  updateCounter(questionField, questionCounter);
+});
+
+const answerField = document.querySelector("#answer");
+const answerCounter = document.querySelector("#answer__counter");
+
+answerField.addEventListener("input", function () {
+  updateCounter(answerField, answerCounter);
+});
